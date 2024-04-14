@@ -1,0 +1,12 @@
+<html lang="en">
+    <body>
+        <div class="delete content">
+            <form action="/home/<%= locals.theId %>?_method=DELETE" method="POST">
+                <label>Are you sure you want to delete this Person?</br>
+                    <input type="text" id="<%= theId %>" name="person" value="<%= FirstName %>" readonly>
+                </label>
+                <button>DELETE</button>
+            </form>
+        </div>
+    </body>
+</html>
