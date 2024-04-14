@@ -1,0 +1,14 @@
+<html lang="en">
+    <body>
+        <div class="edit content">
+            <form action="/home/<%= locals.theId %>?_method=PATCH" method="POST">
+                <label>Edit Fields:</br>
+                    <input type="text" name="FirstName" value="<%= locals.FirstName %>" required>
+                    <input type="text" name="LastName" value="<%= locals.LastName %>" required>
+                    <input type="text" name="Email" value="<%= locals.Email %>" required>
+                </label></br>
+                <button>PATCH</button>
+            </form>
+        </div>
+    </body>
+</html>

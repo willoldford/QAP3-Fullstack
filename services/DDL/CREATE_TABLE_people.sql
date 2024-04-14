@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS public.people
+CREATE TABLE IF NOT EXISTS public."People"
 (
     "ID" integer NOT NULL DEFAULT nextval('"people_ID_seq"'::regclass),
     "FirstName" character varying(32) COLLATE pg_catalog."default" NOT NULL,
